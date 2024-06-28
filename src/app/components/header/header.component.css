@@ -1,0 +1,36 @@
+
+header {
+    margin: 0rem;
+    width: 100vw;
+    background-color: var(--fourth-color);
+    color: var(--primer-color);
+}
+
+.barraNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1rem;
+    padding: .8rem 2rem;
+}
+
+ul {
+    padding-right: 6vh;
+    display: inline-flex;
+}
+
+li {
+    list-style: none;
+    padding: 1.2vw;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    font-size: .4rem;
+    color: var(--primer-color);
+}

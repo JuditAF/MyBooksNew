@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+}
+
+body {
+    width: 100vw;
+    height: 60%;
+    /* font-size: 6rem; */
+    color: var(--first-color);
+}
+
+:root {
+    --first-color: white;
+    --second-color: #54686f;
+    --third-color: #3c7c93;
+    --fourth-color: #068c74;
+    --fifth-color: #131212;
+    --sixth-color: #b58e8b;
+    --seventh-color: rgb(170, 13, 13);
+    --eighth--color: #30241f;
+}

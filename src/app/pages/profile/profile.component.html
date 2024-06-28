@@ -1,0 +1,70 @@
+
+
+<main>
+
+    <div class="container">
+
+        <div class="contentPerfil">
+
+            <div class="perfilImg">
+                <img src="{{myUser.photo}}" alt=""/>
+            </div>
+                
+            <div class="profile">
+                <img src="../../../assets/book.png" alt="">
+                <div class="nomCompleto">
+                    <h2 title="Nombre Completo">{{myUser.nombreCompleto()}}</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="datos">
+
+                <div class="datosNombre">
+                    <p>Nombre</p>
+                    <div class="field">
+                        <h3 id="nombre">{{myUser.name}}</h3>
+                    </div>
+                </div>
+
+                <div class="datosApellidos">
+                    <p>Apellidos</p>
+                    <div class="field">
+                        <h3 id="apellidos">{{myUser.last_name}}</h3>
+                    </div>
+                </div>
+
+                <div class="datosCorreo">
+                    <p>Correo</p>
+                    <div class="field">
+                        <h3 id="correo">{{myUser.email}}</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="contentModif">
+
+            <h2>Editar Datos</h2>
+            <hr>
+
+            <form action="">
+
+                <input type="text" placeholder="Nombre" id="nameNew" #nuevoNombre>
+                <input type="text" placeholder="Apellidos" id="lastName" #nuevoApellido>
+                <input type="text" placeholder="Correo" id="mail" #nuevoEmail>
+                <input type="text" placeholder="Url" id="Url" #nuevaFoto>
+                <div class="boton">
+                    <button type="button" (click)="modificar(nuevoNombre.value, nuevoApellido.value, nuevoEmail.value, nuevaFoto.value)">Modificar</button>
+                </div>
+                
+            </form>
+
+        </div>
+
+    </div>
+
+</main>

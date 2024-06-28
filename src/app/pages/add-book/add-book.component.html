@@ -1,0 +1,53 @@
+
+<main>
+    <section class="cardForm">
+
+        <h2 id="Add">Agregar Títulos a Librería</h2>
+
+        <form class="formBook" action="">
+
+            <div class="groupInput quantity">
+                <i class="fa-solid fa-book"></i>
+                <button type="button" onclick="buttNum(inNum)" id="decrement"> - </button> 
+                <input #idBook id="inNum" type="number" min="30000" max="40000" step="1" value="30000" placeholder="id Libro" required/>
+                <button type="button" onclick="buttNum(inNum)" id="increment"> + </button>
+            </div>
+
+            <div class="groupInput quantity">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <button type="button" (click)="buttNum(idUser)" id="decrement"> - </button>
+                <input #idUser type="number" min="1" max="100" step="1" placeholder="id Usuario"/>
+                <button type="button" (click)="buttNum(idUser)" id="increment"> + </button>
+            </div>
+
+            <div class="groupInput">
+                <i class="fa-solid fa-heading"></i>
+                <input #title type="text" placeholder="Título" required/>
+            </div>
+
+            <div class="groupInput">
+                <i class="fa-solid fa-book-atlas"></i>
+                <input #tipo type="text" placeholder="Tipo" required/>
+            </div>
+
+            <div class="groupInput">
+                <i class="fa-solid fa-feather-pointed"></i>
+                <input #author type="text" placeholder="Autor" required/>
+            </div>
+
+            <div class="groupInput">
+                <i class="fa-solid fa-tag"></i>
+                <input #price type="text" placeholder="Precio" required/>
+            </div>
+
+            <div class="groupInput">
+                <i class="fa-solid fa-link"></i>
+                <input #photo type="text" placeholder="Url Foto" required/>
+            </div>
+
+            <button type="button" class="button" (click)="addBook(title.value, tipo.value, author.value, price.value, photo.value, idBook.value, idUser.value)">Añadir Libro</button>
+
+        </form>
+
+    </section> 
+</main>

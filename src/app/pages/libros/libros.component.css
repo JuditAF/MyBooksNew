@@ -1,0 +1,385 @@
+main {
+    width: 100vw;
+    height: 100%;
+    color: var(--primer-color);
+    background: url(../../../assets/traditional-wooden.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #585555d3;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buscador {
+    width: 100vw;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buscar {
+    width: 2.5vw;
+    height: 5vh;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: var(--first-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    line-height: 30px;
+    box-shadow: inset -2px -2px 2px rgb(255, 255, 255, .2),
+                inset 2px 5px 15px rgb(0, 0, 0, .5);
+}
+
+.buscar:active { 
+    box-shadow: inset 2px 2px 2px rgb(170, 13, 13, .2),
+                inset -2px -5px 15px rgb(0, 0, 0, .5);
+}
+
+.buscar:hover {
+    background-color: var(--eighth--color);
+}
+
+.buscar i {
+    font-size: .45rem;
+    color: var(--fourth-color);
+    position: absolute;
+    margin: .05rem;
+}
+
+#buscador {
+    width: 30vw;
+    height: 5vh;
+    color: var(--first-color);
+    font-size: .4rem;
+    font-weight: 100;
+    letter-spacing: .05rem;
+    padding: .3rem;
+    background-color: rgb(170, 13, 13, .7);
+    border-radius: 10px;
+    box-shadow: 8px 8px 4px #aaaaaa;
+    outline: none;
+    border: none;
+}
+
+.iconoBusca i {
+    width: 2vw;
+}
+
+main hr {
+    width: 90%;
+    size: 1px;
+    color: var(--eighth--color);
+    margin-top: .1rem;
+}
+
+.nulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nulo p {
+    color: red;
+    font-size: .9rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    margin: 1rem;
+}
+
+.vistaLibros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+.libros {
+    list-style-type: none;
+}
+
+.cardContainer {
+    width: 100vw;
+    font-size: .5rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8vh;
+}
+
+.card {
+    width: 7rem;
+    height: 12.5rem;
+    border: 3px solid var(--first-color);
+    border-radius: .8rem;
+    box-shadow: 10px 5px 5px black;
+    margin: 0 8vh 9vh 8vh;
+}
+
+.cardHeader {
+    width: 100%;
+    height: 7rem;
+    background-color: var(--first-color);
+    border-radius: .7rem .7rem 0 0;
+    color: var(--fifth-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+.cardHeader p {
+    font-size: .3rem;
+    margin-bottom: .2rem;
+}
+
+.imgLibro {
+    width: 12vw;
+    height: 34vh;
+    border: .5px dashed var(--fourth-color);
+}
+
+h2 {
+    font-size: .7rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    text-shadow: 1px 1px 2px red;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: .3rem;
+    margin: .2rem;
+}
+
+hr {
+    width: 90%;
+    size: .5px;
+    color: var(--fifth-color)
+}
+
+.cardMain {
+    padding: .5rem;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.cardMain h2 {
+    font-size: .4rem;
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+.cardMain h2:hover {
+    color: red;
+}
+
+span {
+    font-size: .4rem;
+}
+
+p {
+    font-size: .4rem;
+}
+
+.cardBuy {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+.cardBuy p {
+    margin-bottom: .3rem;
+}
+
+.button {
+    width: 4rem;
+    font-size: .5rem;
+    border: 2px solid var(--fourth-color);
+    border-radius: .4rem;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    font-weight: 100;
+    letter-spacing: .1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--sixth-color);
+    transition: .5s;
+}
+
+.standard {
+    background-color: var(--second-color);
+    color: var(--first-color);
+}
+
+.irregular {
+    background-color: var(--seventh-color);
+    color: var(--primer-color);
+}
+
+#Add {
+    margin-top: .3rem;
+    margin-bottom: 0.6rem;
+    font-size: .8rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    color: var(--seventh-color);
+    text-shadow: 1px 1px 2px black;
+}
+
+.cardForm {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.formBook {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.formBook div {
+    height: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+form .groupInput{
+    position: relative;
+    margin: .2rem;
+}
+
+form .groupInput:nth-last-child(2) {
+    margin-bottom: 1rem;
+}
+
+.formBook .groupInput input {
+    width: 25vw;
+    padding: .3rem 1.1rem;
+    font-size: .4rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: .2rem;
+    outline: none;
+}
+
+.formBook .groupInput input::placeholder {
+    color: var(--eighth--color);
+}
+
+.formBook .groupInput input:focus {
+    border: 3.5px solid var(--sixth-color);
+}
+
+.formBook .groupInput i {
+    font-size: .5rem;
+    color: var(--eighth--color);
+    position: absolute;
+    margin-left: .4rem;
+    margin-top: .3rem;
+}
+
+.formBook .quantity i {
+    font-size: .5rem;
+    color: var(--eighth--color);
+    position: absolute;
+    margin-left: -6.3rem;
+    margin-top: .3rem;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.formBook .quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.formBook .quantity button {
+    border-radius: 50%;
+}
+
+.formBook .quantity #decrement{
+    width: .7rem;
+    height: .7rem;
+    font-size: .4rem;
+    margin-top: .2rem;
+    padding-left: .5vh;
+    position: absolute;
+    transform: translate(-13.9vw);
+    background-color: var(--sixth-color);
+    color: var(--eighth--color);
+}
+
+.formBook .quantity #decrement:hover {
+    cursor: pointer;
+    background-color: var(--eighth--color);
+    color: var(--sixth-color);
+}
+
+.formBook .quantity #increment{
+    width: .7rem;
+    height: .7rem;
+    font-size: .4rem;
+    margin-top: .2rem;
+    padding-left: .5vh;
+    position: absolute;
+    transform: translate(13.9vw);
+    background-color: var(--sixth-color);
+    color: var(--eighth--color);
+}
+
+.formBook .quantity #increment:hover {
+    cursor: pointer;
+    background-color: var(--eighth--color);
+    color: var(--sixth-color);
+}
+
+.formBook button {
+    width: 27vw;
+    height: 8vh;
+    font-size: .5rem;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    border-radius: .2rem;
+    color: rgb(170, 13, 13);
+    background-color: var(--first-color)
+}
+
+.formBook button:hover {
+    background-color: var(--eighth--color);
+    transition: .8s;
+}
+

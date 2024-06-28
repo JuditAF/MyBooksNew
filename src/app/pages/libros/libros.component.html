@@ -1,0 +1,35 @@
+
+
+<main>
+   
+    <section class="cardContainer">
+
+        <h2>Libros en Existencias</h2>
+
+        <div class="buscador">
+            <input id="buscador" #idLookFor type="text" placeholder="Busca tu Libro por su idBook"/>
+            <div class="acciones">
+                <button (click)="buscar(idLookFor.value)" class="buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+
+        <ul class="vistaLibros">
+
+            <div *ngIf="books.length===0" class="nulo">
+                <p>NO HAY LIBROS DISPONIBLES</p>
+            </div>
+           
+            <li class="libros" *ngFor="let book of books; let i = index; let impar = odd; let par = even;">
+
+                <app-card [book]="book" [par]="par" [impar]="impar" (eliminarCard)="delete($event)" (addCard)="addBook($event)"></app-card>
+
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+

@@ -1,0 +1,16 @@
+
+main {
+    width: 100vw;
+    color: var(--primer-color);
+    background: url(../../../assets/biblioteca.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #585555d3;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

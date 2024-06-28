@@ -1,0 +1,22 @@
+
+<div class="card" #card>
+    <div class="cardHeader">
+        <div class="vistaImg">
+            <img src="{{book.photo}}" alt="" class="imgLibro">
+            <button type="button" id="delete" (click)="delete(book.id_book)"> x </button>
+        </div>
+        
+        <h3>{{book.type}}</h3>
+        <p> (Tapa blanda)</p>
+        <hr>
+    </div>
+    <div class="cardMain">
+        <h2>{{book.title}}</h2>
+        <span>Autor: {{book.author}}</span>
+        <p>{{book.id_book | pipeReference}}</p>
+    </div>
+    <div class="cardBuy">
+        <p>{{book.price.toFixed(2)}}€</p>
+        <button type="button" class="button" [ngClass]="{standard:impar, irregular:par}">Comprar</button>
+    </div>
+</div>

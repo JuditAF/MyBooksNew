@@ -1,0 +1,43 @@
+footer {
+    width: 100vw;
+    background-color: var(--second-color);
+    color: var(--primer-color);
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+small {
+    padding-top: 3vh;
+    font-size: .3rem;
+}
+
+ul {
+    display: inline-flex;
+}
+
+li {
+    list-style: none;
+    padding: 0 2vh;
+    margin: 2vh 1vh;
+    height: 4vh;
+    display: flex;
+}
+
+a {
+   height: 100%;
+}
+
+img {
+    width: 2vw;
+}
+
+a img {
+    height: 100%;
+    display: flex;
+}
