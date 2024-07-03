@@ -16,7 +16,7 @@
         <p>{{book.id_book | pipeReference}}</p>
     </div>
     <div class="cardBuy">
-        <p>{{book.price.toFixed(2)}}€</p>
+        <p>{{book.price}}€</p>
         <button type="button" class="button" [ngClass]="{standard:impar, irregular:par}">Comprar</button>
     </div>
 </div>
