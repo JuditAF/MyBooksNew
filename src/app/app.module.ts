@@ -20,7 +20,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import { UserComponent } from './models/user/user.component';
+import { UserService } from './shared/user.service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     AddBookComponent,
     UpdateBookComponent,
     LoginComponent,
-    FormLoginComponent
+    FormLoginComponent,
+    UserComponent
     
   ],
   imports: [
@@ -46,7 +48,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [BooksService],
+  providers: [BooksService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
