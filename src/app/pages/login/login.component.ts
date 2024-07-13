@@ -14,36 +14,36 @@ export class LoginComponent {
 
   constructor (public userService: UserService) {
 
-    this.userService.iniciarSesion().subscribe((respuesta: Respuesta) => {
-      this.user = respuesta.data;
-      console.log(respuesta.data);
-      console.log(this.user);
+    // this.userService.iniciarSesion().subscribe((respuesta: Respuesta) => {
+    //   this.user = respuesta.data;
+    //   console.log(respuesta.data);
+    //   console.log(this.user);
       
-    });
+    // });
 
   };
 
-  public iniciarSesion(user:User) {
-    // console.log(user);
+  // public iniciarSesion(user:User) {
+  //   console.log(user);
     
-    // if (user){
+  //   if (user){
       
-    //   this.userService.getOne(Number(id_user)).subscribe((respuesta: Respuesta) => {
-    //     this.user = respuesta.data;
-    //   });
-    //   console.log(this.user);
+  //     this.userService.getOne(Number(id_user)).subscribe((respuesta: Respuesta) => {
+  //       this.user = respuesta.data;
+  //     });
+  //     console.log(this.user);
       
-    // } else {
+  //   } else {
       
-    //   this.userService.getAll().subscribe((respuesta: Respuesta) => {
-    //     this.user = respuesta.data;
-    //   });
-    // }
+  //     this.userService.getAll().subscribe((respuesta: Respuesta) => {
+  //       this.user = respuesta.data;
+  //     });
+  //   }
   
-    this.userService.login(this.user).subscribe((respuesta: Respuesta) => {
-      this.user = respuesta.data;
-    });
+  //   this.userService.login(this.user).subscribe((respuesta: Respuesta) => {
+  //     this.user = respuesta.data;
+  //   });
    
-  }
+  // }
 
 }

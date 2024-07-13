@@ -1,12 +1,12 @@
 export class User {
 
-    public myUser : User
+    public user : User
 
     constructor (public name:string, 
                  public last_name:string, 
                  public email: string, 
                  public photo: string, 
-                 public password:string = " ",
+                 public password:string,
                  public id_user: number = 0) {}
 
     public nombreCompleto (): string {

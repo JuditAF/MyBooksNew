@@ -20,7 +20,6 @@ import { LoginComponent } from './pages/login/login.component';
 import { FormLoginComponent } from './components/form-login/form-login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { UserComponent } from './models/user/user.component';
 import { UserService } from './shared/user.service';
 
 @NgModule({
@@ -39,8 +38,7 @@ import { UserService } from './shared/user.service';
     UpdateBookComponent,
     LoginComponent,
     FormLoginComponent,
-    UserComponent
-    
+  
   ],
   imports: [
     BrowserModule,
