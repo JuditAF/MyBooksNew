@@ -27,7 +27,7 @@
         </div>
 
         <div class="field">
-            <button class="button" (click)="acceder(email.value, password.value);" [disabled]="!loginForm.valid"
+            <button class="button" (click)="acceder();" [disabled]="!loginForm.valid"
             [ngClass]="{'button-disabled' : !loginForm.valid}">Acceder</button>
         </div>
 

@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
 
-  private url : string;
+  private url : "http://localhost:3000";
   public logueado:boolean = false;
   public user:User;
 
@@ -15,15 +15,17 @@ export class UserService {
 
   public register(user:User) {
 
-    this.url = "http://localhost:3000/register";
-    return this.http.get(this.url);
+    console.log('Ususario recibido del formulario en el servicio: ' + user);
+    
+    return this.http.post(this.url + "/" + "register", user);
 
   };
 
   public login(user:User) {
 
-    this.url = "http://localhost:3000/login";
-    return this.http.get(this.url);
+    console.log('Ususario que intenta acceder a la web: ' + this.user.nombreCompleto());
+
+    return this.http.post(this.url + "/" + "login", user);
     
   };
 
