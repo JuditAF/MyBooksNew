@@ -44,14 +44,16 @@ export class FormLoginComponent {
     this.userService.login(user).subscribe((respuesta: Respuesta) => {
       if (respuesta.data = []) {
         
-        this.toast.warning('¡El usuario no existe! 🤪')
+        this.toast.info('¡El usuario no existe! 🤪')
         console.log(respuesta);
         
       } else {
 
         this.userService.logueado =  true;
 
-        this.toast.info('¡Usuario logueado correctamente!, ¡Bienvenido! 🤗');
+        this.userService.user = respuesta.user[0];
+
+        this.toast.success('¡Usuario logueado correctamente!, ¡Bienvenido! 🤗');
         console.log(respuesta);
     
       }

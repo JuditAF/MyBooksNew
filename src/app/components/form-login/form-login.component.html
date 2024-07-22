@@ -23,7 +23,7 @@
             <input type="password" class="form-control" placeholder="Contraseña" formControlName="password"
             [ngClass]="{'is-invalid' : (loginForm.get('password').dirty || loginForm.get('password').touched) && !loginForm.get('password').valid}"/>
             <small class="invalid-feedback" *ngIf="!loginForm.get('password').valid">El campo contraseña es obligatorio</small>
-            <small class="invalid-feedback" *ngIf="!loginForm.get('password').valid && loginForm.get('password').errors.minLength()">La contraseña debe tener al menos 8 caracteres</small>
+            <!-- <small class="invalid-feedback" *ngIf="!loginForm.get('password').valid && loginForm.get('password').errors.minLength()">La contraseña debe tener al menos 8 caracteres</small> -->
         </div>
 
         <div class="field">

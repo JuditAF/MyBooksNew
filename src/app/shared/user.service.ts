@@ -9,7 +9,7 @@ export class UserService {
 
   private url : "http://localhost:3000";
   public logueado:boolean = false;
-  public user:User;
+  public user:User;                                   // Hay que poner que es un array aquí?
 
   constructor( public http:HttpClient ) { }
 
@@ -23,7 +23,8 @@ export class UserService {
 
   public login(user:User) {
 
-    console.log('Ususario que intenta acceder a la web: ' + this.user.nombreCompleto());
+    // console.log('Ususario que intenta acceder a la web: ' + this.user.nombreCompleto());
+    console.log('Ususario que intenta acceder a la web: ' + user);
 
     return this.http.post(this.url + "/" + "login", user);
     

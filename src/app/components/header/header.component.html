@@ -4,12 +4,16 @@
         <h1>My Books</h1>
         <ul>
             <li><a routerLink="/">Home</a></li>
-            <li><a routerLink="/add-book">AddBook</a></li>
-            <li><a routerLink="/update-book">UpdateBook</a></li>
-            <li><a routerLink="/libros">Libros</a></li>
-            <li><a routerLink="/register">Registro</a></li>
-            <li><a routerLink="/profile">Perfil</a></li>
-            <li><a routerLink="/login">Login</a></li>
+
+            <li><a *ngIf="!userLoginOn" routerLink="/login">Login</a></li>
+            <li><a *ngIf="!userLoginOn" routerLink="/register">Registro</a></li>
+
+            <li><a *ngIf="userLoginOn" routerLink="/libros">Libros</a></li>
+            <li><a *ngIf="userLoginOn" routerLink="/add-book">AddBook</a></li>
+            <li><a *ngIf="userLoginOn" routerLink="/update-book">UpdateBook</a></li>
+            
+            <li><a *ngIf="userLoginOn" routerLink="/profile">Perfil</a></li>
+            
         </ul>
     </nav>
 </header>

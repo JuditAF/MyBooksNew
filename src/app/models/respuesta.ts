@@ -7,7 +7,8 @@ export class Respuesta {
     constructor (public error: boolean,
                  public codigo: number,
                  public mensaje: string,
-                 public data: Book[]| User | string
+                 public data: Book[] | string,
+                 public user: User
     ) {};
 
 };

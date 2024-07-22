@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from 'src/app/shared/user.service';
 import { User } from 'src/app/models/user';
 import { Respuesta } from 'src/app/models/respuesta';
@@ -8,42 +8,19 @@ import { Respuesta } from 'src/app/models/respuesta';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit {
 
   public user: User;
+  userLoginOn:boolean = false;
 
   constructor (public userService: UserService) {
 
-    // this.userService.iniciarSesion().subscribe((respuesta: Respuesta) => {
-    //   this.user = respuesta.data;
-    //   console.log(respuesta.data);
-    //   console.log(this.user);
-      
-    // });
-
+    this.userLoginOn = this.userService.logueado;
+    
   };
 
-  // public iniciarSesion(user:User) {
-  //   console.log(user);
+  ngOnInit(): void {
     
-  //   if (user){
-      
-  //     this.userService.getOne(Number(id_user)).subscribe((respuesta: Respuesta) => {
-  //       this.user = respuesta.data;
-  //     });
-  //     console.log(this.user);
-      
-  //   } else {
-      
-  //     this.userService.getAll().subscribe((respuesta: Respuesta) => {
-  //       this.user = respuesta.data;
-  //     });
-  //   }
-  
-  //   this.userService.login(this.user).subscribe((respuesta: Respuesta) => {
-  //     this.user = respuesta.data;
-  //   });
-   
-  // }
+  }
 
 }

@@ -14,15 +14,15 @@ export class UpdateBookComponent {
 
   @Output() modifyCard = new EventEmitter<Book>();
 
-  constructor(private apiService: BooksService){}
+  constructor(private booksService: BooksService){}
 
   public editBook(title:string, tipo:string, author:string, price:number, photo:string, idBook:number, idUser:number) {
 
     let book = new Book(title, tipo, author, Number(price), photo, idBook, idUser);
 
-    this.apiService.edit(book).subscribe((respuesta: Respuesta)=> {
+    this.booksService.edit(book).subscribe((respuesta: Respuesta)=> {
 
-      this.apiService.books = respuesta.data;
+      this.booksService.books = respuesta.data;
       console.log(respuesta);
             
     });

@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BooksService {
 
-  public books: Book[] = [];
+  public books: Book[] | string = [];
 
   public url = "http://localhost:3000/books";
 
